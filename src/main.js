@@ -18,13 +18,16 @@ $(document).ready(function() {
     function getElements(response) {
       if (response) {
         response.results.forEach(function(result) {
-          $('.chinese').html(`<img src="${result.image}"><br>`);
-          $('.chinese').append(result.title);
+          $('.chinese').append(`<img src="${result.image}"><br>`);
+          $('.chinese').append(`${result.title}<br>`);
         });
       } else {
         $('.chinese').text(`There was an error handling your request.`);
       }
     }
   
+  });
+  $(".close").click(function() {
+    location.reload(true);
   });
 });
