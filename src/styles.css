@@ -22,6 +22,10 @@ body {
   justify-content: center;
 }
 
+h1 {
+  font-family: 'Chicle', cursive;
+  }
+
 .map-container {
   /* padding: 3.2rem .8rem; */
   position: relative;
@@ -56,6 +60,21 @@ body {
   left: 80%
 }
 
+.japan { 
+  top: 44%; 
+  left: 87%
+}
+
+.korea { 
+  top: 42%; 
+  left: 84%
+}
+
+.middleEast{ 
+  top: 49%; 
+  left: 62%
+}
+
 .ethiopia { 
   top: 58%; 
   left: 59%
@@ -66,9 +85,76 @@ body {
   left: 17.5%
 }
 
-h1 {
-font-family: 'Chicle', cursive;
+.mexico{ 
+  top: 52%; 
+  left: 13%
 }
+
+.norway { 
+  top: 24%; 
+  left: 49%
+}
+
+.spain { 
+  top: 43%; 
+  left: 44%
+}
+
+.thailand { 
+  top: 50%; 
+  left: 82%
+}
+
+.vietnam { 
+  top: 52%; 
+  left: 83%
+}
+
+.britain { 
+  top: 33%; 
+  left: 44.25%
+}
+
+.caribbean1 { 
+  top: 56.5%; 
+  left: 23%
+}
+
+.eastern-europe { 
+  top: 36%; 
+  left: 52%
+}
+
+.france { 
+  top: 37.25%; 
+  left: 44.5%
+}
+
+.germany { 
+  top: 34.75%; 
+  left: 47.35%
+}
+
+.greece { 
+  top: 44%; 
+  left: 51.5%
+}
+
+.india { 
+  top: 44.5%; 
+  left: 71.5%
+}
+
+.ireland { 
+  top: 33.5%; 
+  left: 42.5%
+}
+
+.italy { 
+  top: 42%; 
+  left: 49%
+}
+
 
 /* 
 Allison: 
