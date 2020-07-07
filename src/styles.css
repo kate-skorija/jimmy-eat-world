@@ -1,0 +1,71 @@
+/* #PH.land
+{
+  fill: red;
+  fill-opacity: 1;
+  stroke:white;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+} */
+
+/* .map-container{
+  height: 100vh;
+  width: 100vw;
+} */
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-container {
+  /* padding: 3.2rem .8rem; */
+  position: relative;
+  display: inline-block;
+}
+  
+.map-container img {
+    width: 100%;
+}
+
+.point {
+  cursor: pointer;
+  position: absolute;
+  width: .8rem;
+  height: .8rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.canada { 
+  top: 35%; 
+  left: 15%
+}
+
+.philippines { 
+  top: 56%; 
+  left: 83.5%
+}
+
+.china { 
+  top: 42.5%; 
+  left: 80%
+}
+
+.ethiopia { 
+  top: 58%; 
+  left: 59%
+}
+
+.el-salvador { 
+  top: 58%; 
+  left: 17.5%
+}
+
+h1 {
+font-family: 'Chicle', cursive;
+}

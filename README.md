@@ -65,11 +65,12 @@ If there are any issues or questions, please reach out to me through [my GitHub 
 *  [Bootstrap](https://developer.mozilla.org/en-US/docs/Glossary/Bootstrap)
 *  [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 *  [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
-*  [webpack]
-*  [Jest]
+*  Webpack
+*  Jest
+*  [Spoonacular API](https://api.spoonacular.com)
 
 ### License
 
 *This project uses the following license: [MIT](https://opensource.org/licenses/MIT)*
 
-Copyright (c) 2020 **_Kate Skorija, Allison Sadin, Chritine Augustine, Megan Hepner_**
+Copyright (c) 2020 **_Kate Skorija, Allison Sadin, Christine Augustine, Megan Hepner_**
