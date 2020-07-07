@@ -17,10 +17,14 @@ $(document).ready(function() {
 
     function getElements(response) {
       if (response) {
-        $('#chinaModal.modal-body').text(response.results.title);
+        response.results.forEach(function(result) {
+          $('.chinese').html(`<img src="${result.image}"><br>`);
+          $('.chinese').append(result.title);
+        });
       } else {
-        $('#chinaModal.modal-body').text(`There was an error handling your request.`);
+        $('.chinese').text(`There was an error handling your request.`);
       }
     }
+  
   });
 });
