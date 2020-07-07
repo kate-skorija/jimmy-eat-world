@@ -32,4 +32,5 @@ $(document).ready(function() {
   $(".close").click(function() {
     location.reload(true);
   });
+
 });
