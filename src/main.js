@@ -3,28 +3,27 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-import { getChineseRecipes } from './../src/recipe-service.js';
+import { getRecipes } from './../src/recipe-service.js';
 import { getRecipeDetails } from './../src/recipe-service.js';
 
 
 $(document).ready(function() {
-  $(".china").click(function() {
+  $(".point").click(function() {
 
     (async () => {
-      const response = await getChineseRecipes();
+      const response = await getRecipes(this.id);
       getElements(response);
     })();
 
-    function getElements(response) {
+    let getElements = (response) => {
       let moreInfo;
       if (response) {
-        response.results.forEach(async function(result) {
+        response.results.forEach(async (result) => {
           moreInfo = await getRecipeDetails(result.id);
-          $('.chinese').append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br>`);
-          console.log(moreInfo.sourceUrl);
+          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br>`);
         });
       } else {
-        $('.chinese').text(`There was an error handling your request.`);
+        $(`div.${this.id}`).text(`There was an error handling your request.`);
       }
     }
   
