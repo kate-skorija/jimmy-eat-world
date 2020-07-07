@@ -1,17 +1,3 @@
-/* #PH.land
-{
-  fill: red;
-  fill-opacity: 1;
-  stroke:white;
-  stroke-opacity: 1;
-  stroke-width:0.5;
-} */
-
-/* .map-container{
-  height: 100vh;
-  width: 100vw;
-} */
-
 html, body {
   height: 100%;
 }
@@ -22,9 +8,21 @@ body {
   justify-content: center;
 }
 
+nav {
+  background-color: #f0f0f0;
+}
+
 h1 {
   font-family: 'Chicle', cursive;
   }
+
+.pink {
+  color: #E25B4A;
+}
+
+.blue {
+  color: #528AB5;
+}
 
 .map-container {
   /* padding: 3.2rem .8rem; */
@@ -43,7 +41,31 @@ h1 {
   height: .8rem;
   background-color: black;
   border-radius: 50%;
+  transition: all .3s ease;
+  will-change: transform, box-shadow;
+  /* transform: translate(-50%, -50%); */
+  box-shadow: 0 0 0 rgba(red, 0.4);
+  animation: pulse 3s infinite;
 }
+
+.point:hover {
+    animation: none;
+    transform:  translate(-50%, -50%) scale3D(1.35, 1.35 ,1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(red, 0.5); }
+  70% { box-shadow: 0 0 0 25px rgba(red, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(red, 0); }
+}
+
+
+/* @keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(red, 0.5); }
+  70% { box-shadow: 0 0 0 25px rgba(red, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(red, 0); }
+} */
 
 .canada { 
   top: 35%; 
@@ -156,29 +178,3 @@ h1 {
 }
 
 
-/* 
-Allison: 
-British
-Caribbean
-Eastern European
-French
-German
-
-Christine :
-Greek
-Indian
-Irish
-Italian
-
-Kate : 
-Japanese
-Korean
-Mexican
-Middle Eastern
-
-Megan : 
-Nordic
-Spanish
-Thai
-Vietnamese 
-*/
