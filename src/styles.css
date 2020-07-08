@@ -55,6 +55,8 @@ main {
     width: 100%;
 }
 
+/* Points ------------------------------------- */
+
 .point2 {
   cursor: pointer;
   position: absolute;
@@ -228,6 +230,11 @@ main {
 }
 
 /* Modals ---------------------------------------- */
+
+img.inputRecipes {
+  width: 312px;
+  height: 231px;
+}
 
 a {
   color: #414052;

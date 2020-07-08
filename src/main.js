@@ -34,8 +34,8 @@ $(document).ready(function() {
   $(".shoppingList").click(function() {
     document.querySelector(".myShoppingList").scrollIntoView({behavior: 'smooth'});
   });
-  $("footer").click(function() {
-    document.querySelector(".myShoppingList").scrollIntoView({behavior: 'smooth'});
+  $(".about").click(function() {
+    document.querySelector("footer").scrollIntoView({behavior: 'smooth'});
   });
 
 });
