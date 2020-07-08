@@ -3,405 +3,382 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Lacquer&family=Miltonian&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon">
     <title>Jimmy Eat World</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a type="button" class="nav-link shoppingList">Shopping List</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="nav-link about">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1>Jimmy Eat World</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="map-container">
+          <img src="../assets/images/world3.png" alt="that's a map!">
+          <div class="point2 canada" title="Canada" data-toggle="modal" data-target="#canadaModal"></div>
+          <div class="point2 el-salvador" title="El Salvador" data-toggle="modal" data-target="#elSalvadorModal"></div>
+          <div id="chinese" class="point china" title="China" data-toggle="modal" data-target="#chinaModal"></div>
+          <div class="point2 ethiopia" title="Ethiopia" data-toggle="modal" data-target="#ethiopiaModal"></div>
+          <div class="point2 philippines" title="Philippines" data-toggle="modal" data-target="#philippinesModal"></div>
+          <div id="japanese" class="point japan" title="Japan" data-toggle="modal" data-target="#japanModal"></div>
+          <div id="korean" class="point korea" title="Korea" data-toggle="modal" data-target="#koreaModal"></div>
+          <div id="mexican" class="point mexico" title="Mexico" data-toggle="modal" data-target="#mexicoModal"></div>
+          <div class="point2 middleEast" title="Middle East" data-toggle="modal" data-target="#middleEastModal"></div>
+          <div id="nordic" class="point norway" title="Nordic" data-toggle="modal" data-target="#nordicModal"></div>
+          <div id="spanish" class="point spain" title="Spain" data-toggle="modal" data-target="#spainModal"></div>
+          <div id="thai" class="point thailand" title="Thailand" data-toggle="modal" data-target="#thailandModal"></div>
+          <div id ="vietnamese" class="point vietnam" title="Vietnam" data-toggle="modal" data-target="#vietnamModal"></div>
+          <div id="british" class="point britain" title="Britain" data-toggle="modal" data-target="#britainModal"></div>
+          <div id="caribbean" class="point caribbean1" title="Caribbean" data-toggle="modal" data-target="#caribbeanModal"></div>
+          <div id="french" class="point france" title="France" data-toggle="modal" data-target="#franceModal"></div>
+          <div id="german" class="point germany" title="Germany" data-toggle="modal" data-target="#germanyModal"></div>
+          <div id="greek" class="point greece" title="Greece" data-toggle="modal" data-target="#greeceModal"></div>
+          <div id="indian" class="point india" title="India" data-toggle="modal" data-target="#indiaModal"></div>
+          <div id="irish" class="point ireland" title="Ireland" data-toggle="modal" data-target="#irelandModal"></div>
+          <div id="italian" class="point italy" title="Italy" data-toggle="modal" data-target="#italyModal"></div>
+        </div>
+        <div id="canadaModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Canada</h4>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1><span class="pink">Jimmy Eat</span><span class="blue"> World</span></h1>
-      <div class="map-container">
-        <img src="../assets/images/world3.png" alt="that's a map!">
-        <div class="point canada" title="Canada" data-toggle="modal" data-target="#canadaModal"></div>
-        <div class="point el-salvador" title="El Salvador" data-toggle="modal" data-target="#elSalvadorModal"></div>
-        <div id="chinese" class="point china" title="China" data-toggle="modal" data-target="#chinaModal"></div>
-        <div class="point ethiopia" title="Ethiopia" data-toggle="modal" data-target="#ethiopiaModal"></div>
-        <div class="point philippines" title="Philippines" data-toggle="modal" data-target="#philippinesModal"></div>
-        <div id="japanese" class="point japan" title="Japan" data-toggle="modal" data-target="#japanModal"></div>
-        <div id="korean" class="point korea" title="Korea" data-toggle="modal" data-target="#koreaModal"></div>
-        <div id="mexican" class="point mexico" title="Mexico" data-toggle="modal" data-target="#mexicoModal"></div>
-        <div class="point middleEast" title="Middle East" data-toggle="modal" data-target="#middleEastModal"></div>
-        <div id="nordic" class="point norway" title="Nordic" data-toggle="modal" data-target="#nordicModal"></div>
-        <div id="spanish" class="point spain" title="Spain" data-toggle="modal" data-target="#spainModal"></div>
-        <div id="thai" class="point thailand" title="Thailand" data-toggle="modal" data-target="#thailandModal"></div>
-        <div id ="vietnamese" class="point vietnam" title="Vietnam" data-toggle="modal" data-target="#vietnamModal"></div>
-        <div id="british" class="point britain" title="Britain" data-toggle="modal" data-target="#britainModal"></div>
-        <div id="caribbean" class="point caribbean1" title="Caribbean" data-toggle="modal" data-target="#caribbeanModal"></div>
-        <div id="french" class="point france" title="France" data-toggle="modal" data-target="#franceModal"></div>
-        <div id="german" class="point germany" title="Germany" data-toggle="modal" data-target="#germanyModal"></div>
-        <div id="greek" class="point greece" title="Greece" data-toggle="modal" data-target="#greeceModal"></div>
-        <div id="indian" class="point india" title="India" data-toggle="modal" data-target="#indiaModal"></div>
-        <div id="irish" class="point ireland" title="Ireland" data-toggle="modal" data-target="#irelandModal"></div>
-        <div id="italian" class="point italy" title="Italy" data-toggle="modal" data-target="#italyModal"></div>
-        <div class="point eastern-europe" title="Eastern-Europe" data-toggle="modal" data-target="#easternEuropeModal"></div>
-      </div>
-    </div>
-    <div id="canadaModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            
-            <h4 class="modal-title">Canada</h4>
-          </div>
-          <div class="modal-body">
-            <h5>Poutine</h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="elSalvadorModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">El Salvador</h4>
-          </div>
-          <div class="modal-body">
-            <h5>Pupusas</h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="chinaModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">China</h4>
-          </div>
-          <div class="modal-body">
-            <div class="chinese"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="ethiopiaModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Ethiopia</h4>
-          </div>
-          <div class="modal-body">
-            <h5>Injera</h5>
-            <h5>Tibs</h5>
-            <h5>Shiro be Kibbe</h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="philippinesModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Philippines</h4>
-          </div>
-          <div class="modal-body">
-            <h5>Lumpia</h5>
-            <h5>Pancit</h5>
-            <h5>Sinigang</h5>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="japanModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Japan</h4>
-          </div>
-          <div class="modal-body">
-            <div class="japanese"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="koreaModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Korea</h4>
-          </div>
-          <div class="modal-body">
-            <div class="korean"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="mexicoModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Mexico</h4>
-          </div>
-          <div class="modal-body">
-            <div class="mexican"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="middleEastModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Middle East</h4>
-          </div>
-          <div class="modal-body">
-            <div class="middleEastern"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="nordicModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Nordic</h4>
-          </div>
-          <div class="modal-body">
-            <div class="nordic"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="spainModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Spain</h4>
-          </div>
-          <div class="modal-body">
-            <div class="spanish"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="thailandModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Thailand</h4>
-          </div>
-          <div class="modal-body">
-            <div class="thai"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="vietnamModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Vietnam</h4>
-          </div>
-          <div class="modal-body">
-            <div class="vietnamese"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="britainModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Britain</h4>
-          </div>
-          <div class="modal-body">
-            <div class="british"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="caribbeanModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Caribbean</h4>
-          </div>
-          <div class="modal-body">
-            <div class="caribbean"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div id="franceModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">France</h4>
-            </div>
-            <div class="modal-body">
-              <div class="french"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              <div class="modal-body">
+                <a href="https://www.seasonsandsuppers.ca/authentic-canadian-poutine-recipe/"><img class="inputRecipes" src="../assets/images/poutine.png" alt="Picture of Poutine"><h5>Poutine</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="germanyModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Germany</h4>
-            </div>
-            <div class="modal-body">
-              <div class="german"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="greeceModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Greece</h4>
-            </div>
-            <div class="modal-body">
-              <div class="greek"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+        <div id="elSalvadorModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">El Salvador</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://www.bonappetit.com/recipe/pupusas"><img class="inputRecipes" src="../assets/images/pupusa.jpg" alt="Picture of Pupusas"><h5>Pupusas</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="indiaModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">India</h4>
+        <div id="chinaModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">China</h4>
+              </div>
+              <div class="modal-body">
+                <div class="chinese"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
             </div>
-            <div class="modal-body">
-              <div class="indian"></div>
+          </div>
+        </div>
+        <div id="ethiopiaModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ethiopia</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/injera-ethiopian-flatbread-3364733"><img class="inputRecipes" src="../assets/images/flatbred.jpeg" alt="Picture of Injera"><h5>Injera</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <div id="philippinesModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Philippines</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://panlasangpinoy.com/longanisa-lumpiang-shanghai/"><img class="inputRecipes" src="../assets/images/longanisa.jpg" alt="Picture of Lumpia"><h5>Lumpia</h5></a>
+                <a href="https://panlasangpinoy.com/chicken-pancit-medley/"><img class="inputRecipes" src="../assets/images/Pancit.jpg" alt="Picture of Pancit"><h5>Pancit</h5></a>
+                <a href="https://panlasangpinoy.com/pork-sinigang-na-baboy-recipe/"><img class="inputRecipes" src="../assets/images/Sinigang.jpg" alt="Picture of Sinigang"><h5>Sinigang</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="japanModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Japan</h4>
+              </div>
+              <div class="modal-body">
+                <div class="japanese"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="koreaModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Korea</h4>
+              </div>
+              <div class="modal-body">
+                <div class="korean"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mexicoModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Mexico</h4>
+              </div>
+              <div class="modal-body">
+                <div class="mexican"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="middleEastModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Middle East</h4>
+              </div>
+              <div class="modal-body">
+                <div class="middleEastern">
+                  <a href="https://www.196flavors.com/lebanon-lahm-bi-ajin-sfiha/"><img class="inputRecipes" src="../assets/images/sfiha.jpg" alt="Picture of Sfiha"><h5>Sfiha</h5></a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="nordicModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Nordic</h4>
+              </div>
+              <div class="modal-body">
+                <div class="nordic"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>-
+          </div>
+        </div>
+        <div id="spainModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Spain</h4>
+              </div>
+              <div class="modal-body">
+                <div class="spanish"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="thailandModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Thailand</h4>
+              </div>
+              <div class="modal-body">
+                <div class="thai"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="vietnamModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Vietnam</h4>
+              </div>
+              <div class="modal-body">
+                <div class="vietnamese"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="britainModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Britain</h4>
+              </div>
+              <div class="modal-body">
+                <div class="british"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="caribbeanModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Caribbean</h4>
+              </div>
+              <div class="modal-body">
+                <div class="caribbean"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="franceModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">France</h4>
+              </div>
+              <div class="modal-body">
+                <div class="french"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="germanyModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Germany</h4>
+              </div>
+              <div class="modal-body">
+                <div class="german"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="greeceModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Greece</h4>
+              </div>
+              <div class="modal-body">
+                <div class="greek"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="indiaModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">India</h4>
+              </div>
+              <div class="modal-body">
+                <div class="indian"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="irelandModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Ireland</h4>
+              </div>
+              <div class="modal-body">
+                <div class="irish"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="italyModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Italy</h4>
+              </div>
+              <div class="modal-body">
+                <div class="italian"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="irelandModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Ireland</h4>
-            </div>
-            <div class="modal-body">
-              <div class="irish"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="italyModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Italy</h4>
-            </div>
-            <div class="modal-body">
-              <div class="italian"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </main>
+    <div class="myShoppingList">
+      <h2>My Shopping List</h2>
+      <p>If you choose to add items, they will be displayed here.</p>
     </div>
-    <div id="easternEuropeModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Eastern-Europe</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+    <footer>
+      <h2>How to Use</h2>
+      <p>Jimmy Eat World displays recipes from all over the world. Click on a dot to view recipes from that country. You can click on the recipe's picture or title to view more information on that recipe. If you decide you enjoy a recipe you can click on <b>Add to Shopping List</b>. Then, the recipe ingredients will be added to your own <b>Shopping List</b>.</p>
+    </footer>
   </body>
 </html>
