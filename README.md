@@ -8,7 +8,6 @@
 
 This application will allow the user to search recipes via an interactive map. The map will have clickable function over certain regions and once clicked, the user will be directed to recipes popular to that region of the world. 
 
-
 ## Specifications
 
 **Behavior**: Program will display a map.
@@ -44,9 +43,13 @@ To Open:
 
 3. Navigate to the `jimmy-eat-world` directory in your editor of choice, or use [Visual Studio Code](https://code.visualstudio.com/)
 
-4. Run the `npm install` command in your terminal to install webpack
+4. Navigate to [Spoonacular API](https://spoonacular.com/food-api) and create a free account to get an API key. 
 
-4. Run the `npm run start` command to view the project in your browser 
+5. Create a .env file in the root directory of the project, and save your new API key in this file like so: API_KEY = YOUR API KEY HERE.
+
+6. Run the `npm install` command in your terminal to install webpack
+
+7. Run the `npm run start` command to view the project in your browser 
 
 ## Known Bugs
 
@@ -54,7 +57,7 @@ There are no known bugs at this time.
 
 ## Support and Contact Details
 
-If there are any issues or questions, please reach out to me through [my GitHub account](https://github.com/kate-skorija). 
+If there are any issues or questions, please reach out through [my GitHub account](https://github.com/kate-skorija). 
 
 ## Technologies Used
 
@@ -65,8 +68,8 @@ If there are any issues or questions, please reach out to me through [my GitHub 
 *  [Bootstrap](https://developer.mozilla.org/en-US/docs/Glossary/Bootstrap)
 *  [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 *  [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
-*  Webpack
-*  Jest
+*  [webpack](https://webpack.js.org/)
+*  [Jest](https://jestjs.io/en/)
 *  [Spoonacular API](https://api.spoonacular.com)
 
 ### License

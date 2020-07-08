@@ -1,6 +1,6 @@
-export async function getChineseRecipes() {
+export async function getRecipes(cuisineParam) {
   try {
-    let response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.API_KEY}&cuisine=chinese`);
+    let response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.API_KEY}&cuisine=${cuisineParam}`);
     let jsonifiedResponse;
     if (response.ok && response.status == 200) {
       jsonifiedResponse = await response.json();
