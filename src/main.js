@@ -1,26 +1,35 @@
-// import { x } from './x.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-import { getChineseRecipes} from './../src/recipe-service.js';
+import { getRecipes } from './../src/recipe-service.js';
+import { getRecipeDetails } from './../src/recipe-service.js';
+
 
 $(document).ready(function() {
-  $(".china").click(function() {
+  $(".point").click(function() {
 
     (async () => {
-      const response = await getChineseRecipes();
-      console.log(response);
+      const response = await getRecipes(this.id);
       getElements(response);
     })();
 
-    function getElements(response) {
+    let getElements = (response) => {
+      let moreInfo;
       if (response) {
-        $('#chinaModal.modal-body').text(response.results.title);
+        response.results.forEach(async (result) => {
+          moreInfo = await getRecipeDetails(result.id);
+          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br>`);
+        });
       } else {
-        $('#chinaModal.modal-body').text(`There was an error handling your request.`);
+        $(`div.${this.id}`).text(`There was an error handling your request.`);
       }
     }
+  
   });
+  $(".close").click(function() {
+    location.reload(true);
+  });
+
 });
