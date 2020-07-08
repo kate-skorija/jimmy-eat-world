@@ -31,5 +31,11 @@ $(document).ready(function() {
   $(".close").click(function() {
     location.reload(true);
   });
+  $(".shoppingList").click(function() {
+    document.querySelector(".myShoppingList").scrollIntoView({behavior: 'smooth'});
+  });
+  $("footer").click(function() {
+    document.querySelector(".myShoppingList").scrollIntoView({behavior: 'smooth'});
+  });
 
 });
