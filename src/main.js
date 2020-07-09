@@ -8,8 +8,6 @@ import { getRecipeDetails } from './../src/recipe-service.js';
 import { getRandomRecipe } from './../src/recipe-service.js';
 
 $(document).ready(function() {
-
-
   $(".point").click(function() {
 
     (async () => {
@@ -22,7 +20,7 @@ $(document).ready(function() {
       if (response) {
         response.results.forEach(async (result) => {
           moreInfo = await getRecipeDetails(result.id);
-          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br><button type="button" id="addToList" class="btn btn-default">Add Items to Shopping List</button><br>`);
+          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}</a><br><button type="button" id="addToList" class="btn btn-default">Add Items to Shopping List</button><br>`);
           $("#addToList").click(function() {
             $("#shoppingList").append(`<li>${moreInfo.extendedIngredients[0].original}</li>`);
           });
@@ -45,13 +43,14 @@ $(document).ready(function() {
     }
   });
 
-
   $(".close").click(function() {
     location.reload(true);
   });
+
   $(".shoppingList").click(function() {
     document.querySelector(".myShoppingList").scrollIntoView({behavior: 'smooth'});
   });
+
   $(".about").click(function() {
     document.querySelector("footer").scrollIntoView({behavior: 'smooth'});
   });

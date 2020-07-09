@@ -4,6 +4,10 @@
 
 ### By Kate Skorija, Allison Sadin, Christine Augustine, Megan Hepner
 
+## Preview
+
+![Jimmy Eat World](./assets/images/world.gif)
+
 ## Description 
 
 This application will allow the user to search recipes via an interactive map. The map will have clickable function over certain regions and once clicked, the user will be directed to recipes popular to that region of the world. 
@@ -11,20 +15,24 @@ This application will allow the user to search recipes via an interactive map. T
 ## Specifications
 
 **Behavior**: Program will display a map.
-  * Input: user navigates to webpage
-  * Output: map is displayed
+  * Input: User navigates to webpage
+  * Output: Map is displayed
 
-**Behavior**: Add click function to regions of the map.
-  * Input: user clicks map
-  * Output: display empty div
+**Behavior**: When user clicks on a point, recipes from that region are displayed.
+  * Input: User clicks map
+  * Output: Recipe options are displayed
 
   **Behavior**: Populate div with recipe information and image, with an option to follow a link to the recipe listed.
   * Input: User clicks on a recipe
   * Output: User is redirected to the recipe page with cooking instructions
 
-**Behavior**: 
- * Input:
- * Output: 
+**Behavior**: Generate random recipe
+ * Input: user clicks What's for Dinner button
+ * Output: modal pops up with Random Recipe, title, and link to recipe
+
+**Behavior**: Generate shopping list
+ * Input: user clicks add to shopping list under each recipe photo
+ * Output: ingredients from recipe are generated in shopping list div
 
 ## Setup/Installation Requirements
 

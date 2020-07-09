@@ -234,8 +234,13 @@ main {
 }
 
 .austrailia { 
-  top: 52%; 
-  left: 83%
+  top: 82%; 
+  left: 90%
+}
+
+.argentina { 
+  top: 85%; 
+  left: 26%;
 }
 
 /* Shopping List --------------------------------- */
@@ -270,9 +275,9 @@ button {
   margin-bottom: 10px;
 }
 
-a img {
+/* a img {
   margin-bottom: 5px;
-}
+} */
 
 .modal {
   text-align: center;
@@ -284,7 +289,7 @@ footer {
   font-size: 16px;
   background-color: #754C78;
   color: #f0f0f0;
-  height: 200px;
+  height: auto;
   width: 100%;
   margin-top: 50px;
   padding: 30px 100px;
@@ -293,3 +298,7 @@ footer {
 footer h2 {
   color: whitesmoke;
 }  
+
+h6 {
+  float: right;
+}
