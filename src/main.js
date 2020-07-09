@@ -5,9 +5,11 @@ import './styles.css';
 
 import { getRecipes } from './../src/recipe-service.js';
 import { getRecipeDetails } from './../src/recipe-service.js';
-
+import { getRandomRecipe } from './../src/recipe-service.js';
 
 $(document).ready(function() {
+
+
   $(".point").click(function() {
 
     (async () => {
@@ -20,24 +22,30 @@ $(document).ready(function() {
       if (response) {
         response.results.forEach(async (result) => {
           moreInfo = await getRecipeDetails(result.id);
-          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br><button type="button" id = "addToList" class="btn btn-default close">Add Items to Shopping List</button><br>`);
-          getIngredients(moreInfo);
+          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br><button type="button" id="addToList" class="btn btn-default">Add Items to Shopping List</button><br>`);
+          $("#addToList").click(function() {
+            $("#shoppingList").append(`<li>${moreInfo.extendedIngredients[0].original}</li>`);
+          });
         });
       } else {
         $(`div.${this.id}`).text(`There was an error handling your request.`);
       }
     }
-
-    function getIngredients(moreInfoParam) {
-      $("#addToList").click(() => {
-      moreInfoParam.extendedIngredients.forEach((ingredient) => {
-        console.log(ingredient.original)
-      $('#shoppingList').append(`${ingredient.original}`);
-      });
-    });
-  }
-  
   });
+  
+  $(".randomRecipe").click(function() {
+    (async () => {
+      const random = await getRandomRecipe();
+      printRandom(random);
+      console.log(random);
+    })();
+    function printRandom(random) {
+      console.log(random);
+      $("div.testRandomRecipe").append(`<a target="_blank" href="${random.recipes[0].sourceUrl}"><img class="randomImage" src="${random.recipes[0].image}"><br>${random.recipes[0].title}<br><a>`);
+    }
+  });
+
+
   $(".close").click(function() {
     location.reload(true);
   });
@@ -47,5 +55,10 @@ $(document).ready(function() {
   $(".about").click(function() {
     document.querySelector("footer").scrollIntoView({behavior: 'smooth'});
   });
-
 });
+
+
+
+
+
+
