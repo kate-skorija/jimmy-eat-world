@@ -218,6 +218,26 @@ main {
   left: 49%
 }
 
+.colombia { 
+  top: 62%; 
+  left: 22%
+}
+
+.brazil { 
+  top: 70%; 
+  left: 27%
+}
+
+.nigeria { 
+  top: 62%; 
+  left: 47%
+}
+
+.austrailia { 
+  top: 52%; 
+  left: 83%
+}
+
 /* Shopping List --------------------------------- */
 
 .myShoppingList {
@@ -236,9 +256,17 @@ img.inputRecipes {
   height: 231px;
 }
 
+.randomImage {
+  width: 312px;
+  height: 231px;
+}
+
 a {
   color: #414052;
   font-size: 20px;
+}
+
+button {
   margin-bottom: 10px;
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
     <title>Jimmy Eat World</title>
   </head>
   <body>
@@ -15,6 +15,9 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a type="button" class="nav-link shoppingList">Shopping List</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="nav-link randomRecipe" data-toggle="modal" data-target="#myRandomRecipe">Random Recipe</a>
               </li>
               <li class="nav-item">
                 <a type="button" class="nav-link about">About</a>
@@ -50,6 +53,10 @@
           <div id="indian" class="point india" title="India" data-toggle="modal" data-target="#indiaModal"></div>
           <div id="irish" class="point ireland" title="Ireland" data-toggle="modal" data-target="#irelandModal"></div>
           <div id="italian" class="point italy" title="Italy" data-toggle="modal" data-target="#italyModal"></div>
+          <div class="point2 colombia" title="Colombia" data-toggle="modal" data-target="#colombiaModal"></div>
+          <div class="point2 brazil" title="Brazil" data-toggle="modal" data-target="#brazilModal"></div>
+          <div class="point2 nigeria" title="Nigeria" data-toggle="modal" data-target="#nigeriaModal"></div>
+          <div class="point2 austrailia" title="Austrailia" data-toggle="modal" data-target="#austrailiaModal"></div>
         </div>
         <div id="canadaModal" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -370,12 +377,72 @@
             </div>
           </div>
         </div>
+        <div id="colombia" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Colombia</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://www.allrecipes.com/gallery/our-best-empanada-recipes/"><img class="inputRecipes" src="../assets/images/pupusa.jpg" alt="Picture of Empanadas"><h5>Empanadas</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="brazil" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Brazil</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://www.iheartbrazil.com/brazilian-farofa-recipe/"><img class="inputRecipes" src="../assets/images/pupusa.jpg" alt="Picture of Farofa"><h5>Farofa</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="nigeria" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Brazil</h4>
+              </div>
+              <div class="modal-body">
+                <a href="https://www.iheartbrazil.com/brazilian-farofa-recipe/"><img class="inputRecipes" src="../assets/images/pupusa.jpg" alt="Picture of Farofa"><h5>Farofa</h5></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <div id= "shoppingList" class="myShoppingList">
+    <div id="shoppingList" class="myShoppingList">
       <h2>My Shopping List</h2>
       <p>If you choose to add items, they will be displayed here.</p>
     </div>
+      <div id="myRandomRecipe" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Random Recipe</h4>
+            </div>
+            <div class="modal-body">
+              <div class="testRandomRecipe"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default close"  data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
       <h2>How to Use</h2>
       <p>Jimmy Eat World displays recipes from all over the world. Click on a dot to view recipes from that country. You can click on the recipe's picture or title to view more information on that recipe. If you decide you enjoy a recipe you can click on <b>Add to Shopping List</b>. Then, the recipe ingredients will be added to your own <b>Shopping List</b>.</p>
