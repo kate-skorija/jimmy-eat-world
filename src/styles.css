@@ -218,6 +218,31 @@ main {
   left: 49%
 }
 
+.colombia { 
+  top: 62%; 
+  left: 22%
+}
+
+.brazil { 
+  top: 70%; 
+  left: 27%
+}
+
+.nigeria { 
+  top: 62%; 
+  left: 47%
+}
+
+.austrailia { 
+  top: 82%; 
+  left: 90%
+}
+
+.argentina { 
+  top: 85%; 
+  left: 26%;
+}
+
 /* Shopping List --------------------------------- */
 
 .myShoppingList {
@@ -236,15 +261,23 @@ img.inputRecipes {
   height: 231px;
 }
 
+.randomImage {
+  width: 312px;
+  height: 231px;
+}
+
 a {
   color: #414052;
   font-size: 20px;
+}
+
+button {
   margin-bottom: 10px;
 }
 
-a img {
+/* a img {
   margin-bottom: 5px;
-}
+} */
 
 .modal {
   text-align: center;
@@ -256,7 +289,7 @@ footer {
   font-size: 16px;
   background-color: #754C78;
   color: #f0f0f0;
-  height: 200px;
+  height: auto;
   width: 100%;
   margin-top: 50px;
   padding: 30px 100px;
@@ -265,3 +298,7 @@ footer {
 footer h2 {
   color: whitesmoke;
 }  
+
+h6 {
+  float: right;
+}
