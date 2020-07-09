@@ -20,12 +20,22 @@ $(document).ready(function() {
       if (response) {
         response.results.forEach(async (result) => {
           moreInfo = await getRecipeDetails(result.id);
-          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br>`);
+          $(`div.${this.id}`).append(`<a target="_blank" href="${moreInfo.sourceUrl}"><img src="${result.image}"><br>${result.title}<br></a><br><button type="button" id = "addToList" class="btn btn-default close">Add Items to Shopping List</button><br>`);
+          getIngredients(moreInfo);
         });
       } else {
         $(`div.${this.id}`).text(`There was an error handling your request.`);
       }
     }
+
+    function getIngredients(moreInfoParam) {
+      $("#addToList").click(() => {
+      moreInfoParam.extendedIngredients.forEach((ingredient) => {
+        console.log(ingredient.original)
+      $('#shoppingList').append(`${ingredient.original}`);
+      });
+    });
+  }
   
   });
   $(".close").click(function() {
