@@ -28,17 +28,15 @@ $(document).ready(function() {
       } else {
         $(`div.${this.id}`).text(`There was an error handling your request.`);
       }
-    }
+    };
   });
   
   $(".randomRecipe").click(function() {
     (async () => {
       const random = await getRandomRecipe();
       printRandom(random);
-      console.log(random);
     })();
     function printRandom(random) {
-      console.log(random);
       $("div.testRandomRecipe").append(`<a target="_blank" href="${random.recipes[0].sourceUrl}"><img class="randomImage" src="${random.recipes[0].image}"><br>${random.recipes[0].title}<br><a>`);
     }
   });
